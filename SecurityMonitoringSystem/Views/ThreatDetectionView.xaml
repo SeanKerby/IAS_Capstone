@@ -1,0 +1,79 @@
+<UserControl x:Class="SecurityMonitoringSystem.Views.ThreatDetectionView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{StaticResource BackgroundBrush}">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Threat Detection &amp; Analysis" FontSize="28" FontWeight="Bold" Margin="0,0,0,20"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Alerts List -->
+            <Border Grid.Column="0" Background="{StaticResource PanelBrush}" Margin="0,0,10,0" CornerRadius="8" Padding="15">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Active Threats" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,10"/>
+                    
+                    <DataGrid Grid.Row="1" x:Name="ThreatsDataGrid" AutoGenerateColumns="False" IsReadOnly="True" HeadersVisibility="Column">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Time" Binding="{Binding Timestamp}" Width="100"/>
+                            <DataGridTextColumn Header="Threat ID" Binding="{Binding ThreatID}" Width="100"/>
+                            <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>
+                            
+                            <DataGridTemplateColumn Header="Risk" Width="100">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Border CornerRadius="4" Padding="5,2" HorizontalAlignment="Left">
+                                            <Border.Style>
+                                                <Style TargetType="Border">
+                                                    <Setter Property="Background" Value="{StaticResource WarningYellowBrush}"/>
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding RiskLevel}" Value="High">
+                                                            <Setter Property="Background" Value="{StaticResource AlertRedBrush}"/>
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding RiskLevel}" Value="Low">
+                                                            <Setter Property="Background" Value="{StaticResource SuccessGreenBrush}"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Border.Style>
+                                            <TextBlock Text="{Binding RiskLevel}" Foreground="White" FontWeight="Bold"/>
+                                        </Border>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Border>
+
+            <!-- Risk Overview -->
+            <Border Grid.Column="1" Background="{StaticResource PanelBrush}" Margin="10,0,0,0" CornerRadius="8" Padding="15">
+                <StackPanel>
+                    <TextBlock Text="Risk Level Indicator" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,20"/>
+                    
+                    <Border Background="{StaticResource AlertRedBrush}" Height="120" CornerRadius="8" Margin="0,0,0,20">
+                        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBlock Text="HIGH ALERT" Foreground="White" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Immediate Action Required" Foreground="White" FontSize="14" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Button Content="Isolate Affected Nodes" Background="#3F3F46" Height="40" Margin="0,5" Click="Action_Click"/>
+                    <Button Content="Initialize Countermeasures" Background="#3F3F46" Height="40" Margin="0,5" Click="Action_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

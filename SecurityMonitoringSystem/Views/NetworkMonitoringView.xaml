@@ -1,0 +1,27 @@
+<UserControl x:Class="SecurityMonitoringSystem.Views.NetworkMonitoringView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{StaticResource BackgroundBrush}">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="0,0,0,20">
+            <TextBlock Text="Network Monitoring" FontSize="28" FontWeight="Bold" VerticalAlignment="Center"/>
+            <Button Content="Refresh Status" HorizontalAlignment="Right" Width="120" Height="35" Click="RefreshButton_Click"/>
+        </Grid>
+
+        <DataGrid Grid.Row="1" x:Name="DevicesDataGrid" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Device ID" Binding="{Binding ID}" Width="100"/>
+                <DataGridTextColumn Header="Device Name" Binding="{Binding Name}" Width="200"/>
+                <DataGridTextColumn Header="IP Address" Binding="{Binding IPAddress}" Width="150"/>
+                <DataGridTextColumn Header="Type" Binding="{Binding Type}" Width="100"/>
+                <DataGridTextColumn Header="Uplink Speed" Binding="{Binding UplinkSpeed}" Width="120"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="120"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

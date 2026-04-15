@@ -1,0 +1,80 @@
+<UserControl x:Class="SecurityMonitoringSystem.Views.DashboardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{StaticResource BackgroundBrush}">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="System Dashboard" FontSize="28" FontWeight="Bold" Margin="0,0,0,20"/>
+
+        <!-- Summary Cards -->
+        <Grid Grid.Row="1" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="{StaticResource PanelBrush}" Margin="0,0,10,0" CornerRadius="8" Padding="20">
+                <StackPanel>
+                    <TextBlock Text="Active Connections" Foreground="{StaticResource TextBrush}" FontSize="16"/>
+                    <TextBlock Text="1,432" Foreground="{StaticResource AccentBrush}" FontSize="36" FontWeight="Bold" Margin="0,10,0,0"/>
+                    <TextBlock Text="+12% since last hour" Foreground="{StaticResource SuccessGreenBrush}" FontSize="12"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Background="{StaticResource PanelBrush}" Margin="10,0,10,0" CornerRadius="8" Padding="20">
+                <StackPanel>
+                    <TextBlock Text="Detected Threats" Foreground="{StaticResource TextBrush}" FontSize="16"/>
+                    <TextBlock Text="3" Foreground="{StaticResource AlertRedBrush}" FontSize="36" FontWeight="Bold" Margin="0,10,0,0"/>
+                    <TextBlock Text="2 High, 1 Medium Risk" FontSize="12"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="2" Background="{StaticResource PanelBrush}" Margin="10,0,0,0" CornerRadius="8" Padding="20">
+                <StackPanel>
+                    <TextBlock Text="Total Users" Foreground="{StaticResource TextBrush}" FontSize="16"/>
+                    <TextBlock Text="84" Foreground="#FFB900" FontSize="36" FontWeight="Bold" Margin="0,10,0,0"/>
+                    <TextBlock Text="5 Currently Online" FontSize="12"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <!-- Charts Mockup -->
+        <Border Grid.Row="2" Background="{StaticResource PanelBrush}" CornerRadius="8" Padding="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Network Traffic Monitor (Past 24h)" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,20"/>
+                
+                <!-- Mock Bar Chart -->
+                <Grid Grid.Row="1" VerticalAlignment="Bottom" Height="200">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Grid.Column="0" Fill="{StaticResource AccentBrush}" Margin="10,50,10,0" RadiusX="4" RadiusY="4"/>
+                    <Rectangle Grid.Column="1" Fill="{StaticResource AccentBrush}" Margin="10,120,10,0" RadiusX="4" RadiusY="4"/>
+                    <Rectangle Grid.Column="2" Fill="{StaticResource AccentBrush}" Margin="10,30,10,0" RadiusX="4" RadiusY="4"/>
+                    <Rectangle Grid.Column="3" Fill="{StaticResource AlertRedBrush}" Margin="10,10,10,0" RadiusX="4" RadiusY="4"/>
+                    <Rectangle Grid.Column="4" Fill="{StaticResource AccentBrush}" Margin="10,90,10,0" RadiusX="4" RadiusY="4"/>
+                    <Rectangle Grid.Column="5" Fill="{StaticResource AccentBrush}" Margin="10,60,10,0" RadiusX="4" RadiusY="4"/>
+                    <Rectangle Grid.Column="6" Fill="{StaticResource AccentBrush}" Margin="10,150,10,0" RadiusX="4" RadiusY="4"/>
+                </Grid>
+                <!-- Line for X Axis -->
+                <Rectangle Grid.Row="1" Height="2" Fill="#3F3F46" VerticalAlignment="Bottom"/>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
