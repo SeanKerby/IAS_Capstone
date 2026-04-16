@@ -23,10 +23,10 @@
                 
                 <Button Content="Dashboard" Command="{Binding NavigateDashboardCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
                 <Button Content="Network Monitoring" Command="{Binding NavigateNetworkCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
-                <Button Content="Access Control" Command="{Binding NavigateAccessCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
+                <Button x:Name="btnAccessControl" Content="Access Control" Command="{Binding NavigateAccessCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
                 <Button Content="Data Encryption" Command="{Binding NavigateEncryptionCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
                 <Button Content="Activity Logging" Command="{Binding NavigateLogsCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
-                <Button Content="Threat Detection" Command="{Binding NavigateThreatsCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
+                <Button x:Name="btnThreatDetection" Content="Threat Detection" Command="{Binding NavigateThreatsCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
             </StackPanel>
         </Border>
 
@@ -42,7 +42,7 @@
                 <Grid Margin="20,0">
                     <TextBlock Text="Infrastructure Security Monitoring" VerticalAlignment="Center" FontSize="18" FontWeight="SemiBold"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                        <TextBlock Text="Role: Admin" VerticalAlignment="Center" Margin="0,0,20,0"/>
+                        <TextBlock x:Name="txtHeaderRole" Text="Role: Admin" VerticalAlignment="Center" Margin="0,0,20,0"/>
                         <Ellipse Width="35" Height="35" Fill="{StaticResource AccentBrush}"/>
                     </StackPanel>
                 </Grid>

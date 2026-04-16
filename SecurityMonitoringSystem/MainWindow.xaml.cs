@@ -7,13 +7,13 @@ namespace SecurityMonitoringSystem
         public MainWindow()
         {
             InitializeComponent();
-            try {
-                Services.DatabaseInitializer.Initialize();
-                Services.NetworkSimulationService.StartSimulation();
-            }
-            catch (System.Exception ex)
+            
+            txtHeaderRole.Text = $"Role: {Services.SessionProvider.CurrentRole} | User: {Services.SessionProvider.CurrentUsername}";
+            
+            if (!Services.SessionProvider.IsAdmin)
             {
-                MessageBox.Show("DB Init Error: " + ex.Message);
+                btnAccessControl.Visibility = Visibility.Collapsed;
+                btnThreatDetection.Visibility = Visibility.Collapsed;
             }
         }
     }

@@ -1,7 +1,7 @@
 <Application x:Class="SecurityMonitoringSystem.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="MainWindow.xaml">
+             StartupUri="LoginWindow.xaml">
     <Application.Resources>
         <!-- Global Colors -->
         <Color x:Key="BackgroundColor">#1E1E1E</Color>
@@ -39,8 +39,7 @@
                         <Border Background="{TemplateBinding Background}" CornerRadius="4">
                             <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
                                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
-                                              Margin="{TemplateBinding Padding}"
-                                              TextElement.Foreground="{TemplateBinding Foreground}"/>
+                                              Margin="{TemplateBinding Padding}"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
@@ -74,7 +73,7 @@
                 <Setter.Value>
                     <ControlTemplate TargetType="DataGridCell">
                         <Border Background="{TemplateBinding Background}" BorderThickness="0">
-                            <ContentPresenter VerticalAlignment="Center" Margin="5" TextElement.Foreground="{TemplateBinding Foreground}"/>
+                            <ContentPresenter VerticalAlignment="Center" Margin="5"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>

@@ -32,19 +32,23 @@ namespace SecurityMonitoringSystem.Services
             return users;
         }
 
-        public async Task<bool> AuthenticateAsync(string username, string rawPassword)
+        public async Task<string> AuthenticateAsync(string username, string rawPassword)
         {
             string hashed = DatabaseInitializer.ComputeSha256Hash(rawPassword);
             using (var conn = new SqlConnection(DatabaseInitializer.ConnectionString))
             {
                 await conn.OpenAsync();
-                var cmd = new SqlCommand("SELECT COUNT(*) FROM Users WHERE Username=@u AND PasswordHash=@p", conn);
+                var cmd = new SqlCommand("SELECT Role FROM Users WHERE Username=@u AND PasswordHash=@p", conn);
                 cmd.Parameters.AddWithValue("@u", username);
                 cmd.Parameters.AddWithValue("@p", hashed);
-                int count = (int)await cmd.ExecuteScalarAsync();
+                var result = await cmd.ExecuteScalarAsync();
 
-                if (count > 0)
+                if (result != null)
                 {
+                    string role = result.ToString();
+                    SessionProvider.CurrentUsername = username;
+                    SessionProvider.CurrentRole = role;
+
                     // Update LastLogin
                     var upd = new SqlCommand("UPDATE Users SET LastLogin=@d WHERE Username=@u", conn);
                     upd.Parameters.AddWithValue("@d", DateTime.Now);
@@ -52,11 +56,11 @@ namespace SecurityMonitoringSystem.Services
                     await upd.ExecuteNonQueryAsync();
 
                     await ActivityLogService.LogActionAsync(username, "Access Control", "User logged in successfully");
-                    return true;
+                    return role;
                 }
                 
                 await ActivityLogService.LogActionAsync(username, "Access Control", "Failed login attempt");
-                return false;
+                return null;
             }
         }
 
