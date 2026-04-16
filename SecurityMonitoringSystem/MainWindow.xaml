@@ -16,18 +16,27 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Sidebar -->
         <Border Grid.Column="0" Background="{StaticResource PanelBrush}">
-            <StackPanel Margin="0,20,0,0">
-                <TextBlock Text="6G SECURE" Foreground="{StaticResource AccentBrush}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30"/>
-                
-                <Button Content="Dashboard" Command="{Binding NavigateDashboardCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
-                <Button Content="Network Monitoring" Command="{Binding NavigateNetworkCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
-                <Button x:Name="btnAccessControl" Content="Access Control" Command="{Binding NavigateAccessCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
-                <Button Content="Data Encryption" Command="{Binding NavigateEncryptionCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
-                <Button Content="Activity Logging" Command="{Binding NavigateLogsCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
-                <Button x:Name="btnThreatDetection" Content="Threat Detection" Command="{Binding NavigateThreatsCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
-            </StackPanel>
+            <DockPanel>
+                <!-- Logout at bottom -->
+                <Border DockPanel.Dock="Bottom" Margin="10,10,10,20">
+                    <Button x:Name="btnLogout" Content="⏻  Log Out" Height="40"
+                            Background="#3A1A1A" Foreground="#FF6B6B"
+                            HorizontalContentAlignment="Left" Padding="20,0,0,0"
+                            Click="Logout_Click"/>
+                </Border>
+                <!-- Nav items -->
+                <StackPanel Margin="0,20,0,0">
+                    <TextBlock Text="6G SECURE" Foreground="{StaticResource AccentBrush}" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+                    
+                    <Button Content="Dashboard" Command="{Binding NavigateDashboardCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
+                    <Button Content="Network Monitoring" Command="{Binding NavigateNetworkCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
+                    <Button x:Name="btnAccessControl" Content="Access Control" Command="{Binding NavigateAccessCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
+                    <Button Content="Data Encryption" Command="{Binding NavigateEncryptionCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
+                    <Button Content="Activity Logging" Command="{Binding NavigateLogsCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
+                    <Button x:Name="btnThreatDetection" Content="Threat Detection" Command="{Binding NavigateThreatsCmd}" Margin="10,5" Height="40" Background="Transparent" Foreground="{StaticResource TextBrush}" HorizontalContentAlignment="Left" Padding="20,0,0,0"/>
+                </StackPanel>
+            </DockPanel>
         </Border>
 
         <!-- Main Content Area -->

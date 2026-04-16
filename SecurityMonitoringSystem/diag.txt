@@ -1,0 +1,1023 @@
+﻿MSBuild version 18.0.11+c2435c3e0 for .NET
+C:\Program Files\dotnet\sdk\10.0.103\MSBuild.dll --target:MarkupCompilePass1 --verbosity:m --verbosity:diag -distributedlogger:Microsoft.DotNet.Cli.Commands.MSBuild.MSBuildLogger,C:\Program Files\dotnet\sdk\10.0.103\dotnet.dll*Microsoft.DotNet.Cli.Commands.MSBuild.MSBuildForwardingLogger,C:\Program Files\dotnet\sdk\10.0.103\dotnet.dll -maxcpucount -tlp:default=auto .\SecurityMonitoringSystem.csproj
+Build started 4/17/2026 7:41:09 AM.
+Environment at start of build:
+DOTNET_CLI_TELEMETRY_SESSIONID = a39f239b-150a-42fd-97fe-8bbf2e1c45c5
+DOTNET_HOST_PATH = C:\Program Files\dotnet\dotnet.exe
+MSBuildExtensionsPath = C:\Program Files\dotnet\sdk\10.0.103\
+MSBUILDFAILONDRIVEENUMERATINGWILDCARD = 1
+MSBuildLoadMicrosoftTargetsReadOnly = true
+MSBuildSDKsPath = C:\Program Files\dotnet\sdk\10.0.103\Sdks
+MSBUILDUSESERVER = 0
+
+07:41:09.815     0>Terminal Logger was not used because the output is being redirected to a file.
+                   Process = "C:\Program Files\dotnet\dotnet.exe"
+                   MSBuild executable path = "C:\Program Files\dotnet\sdk\10.0.103\MSBuild.dll"
+                   Command line arguments = "C:\Program Files\dotnet\sdk\10.0.103\MSBuild.dll -maxcpucount --verbosity:m -tlp:default=auto --target:MarkupCompilePass1 --verbosity:diag -distributedlogger:Microsoft.DotNet.Cli.Commands.MSBuild.MSBuildLogger,C:\Program Files\dotnet\sdk\10.0.103\dotnet.dll*Microsoft.DotNet.Cli.Commands.MSBuild.MSBuildForwardingLogger,C:\Program Files\dotnet\sdk\10.0.103\dotnet.dll"
+                   Current directory = "C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem"
+                   MSBuild version = "18.0.11+c2435c3e0"
+                   Based on the Windows registry key LongPathsEnabled, the LongPaths feature is enabled.
+                   C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj(3,92): message : Property 'MSBuildExtensionsPath' with value 'C:\Program Files\dotnet\sdk\10.0.103\' expanded from the environment.
+                   C:\Program Files\dotnet\sdk\10.0.103\Current\Microsoft.Common.props(60,5): message : Property reassignment: $(MSBuildProjectExtensionsPath)="C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\obj\" (previous value: "obj\") at C:\Program Files\dotnet\sdk\10.0.103\Current\Microsoft.Common.props (60,5)
+                   Assembly loaded during Evaluation: System.Threading.Tasks.Parallel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Threading.Tasks.Parallel.dll, MVID: 484bafc2-9f0e-4e62-8af6-e65d5cd71f84, AssemblyLoadContext: Default)
+                   C:\Program Files\dotnet\sdk\10.0.103\Current\Microsoft.Common.props(84,119): message : Property 'MSBuildUserExtensionsPath' with value 'C:\Users\HF\AppData\Local\Microsoft\MSBuild' expanded from the environment.
+                   C:\Program Files\dotnet\sdk\10.0.103\Roslyn\Microsoft.CSharp.Core.targets(200,5): message : Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion:7.3 -define:DEBUG;TRACE" (previous value: "-langversion:7.3") at C:\Program Files\dotnet\sdk\10.0.103\Roslyn\Microsoft.CSharp.Core.targets (200,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.props(117,5): message : Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM64" (previous value: "Any CPU,x86,x64") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.props (117,5)
+                   Assembly loaded during Evaluation: Microsoft.Build.Utilities.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Build.Utilities.Core.dll, MVID: f1451a5e-5f7f-4573-9f12-a7d129e87106, AssemblyLoadContext: Default)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(175,5): message : Property reassignment: $(_DebugSymbolsProduced)="true" (previous value: "false") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (175,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(185,5): message : Property reassignment: $(_DocumentationFileProduced)="false" (previous value: "true") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (185,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(392,5): message : Property reassignment: $(MSBuildCopyMarkerName)="Security.E46223ED" (previous value: "SecurityMonitoringSystem.csproj") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (392,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(393,5): message : Property reassignment: $(MSBuildCopyMarkerName)="Security.E46223ED.Up2Date" (previous value: "Security.E46223ED") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (393,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(527,5): message : Property reassignment: $(ProcessorArchitecture)="msil" (previous value: "AnyCPU") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (527,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(580,5): message : Property reassignment: $(DelaySign)="" (previous value: "false") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (580,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(649,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};" (previous value: "{CandidateAssemblyFiles}") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (649,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(650,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles};") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (650,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(651,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem}") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (651,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(652,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory}") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (652,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(653,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (653,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(654,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (654,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(655,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders}") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (655,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(656,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC}") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (656,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(657,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};bin\Debug\" (previous value: "{CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName}") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (657,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(2606,5): message : Property 'LOCALAPPDATA' with value 'C:\Users\HF\AppData\Local' expanded from the environment.
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(3934,5): message : Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (3934,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(3935,5): message : Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Off" (previous value: "Auto") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (3935,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message : Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message :       AssignProjectConfiguration;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message :       _SplitProjectReferencesByFileExistence
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message :     " (previous value: "_SplitProjectReferencesByFileExistence") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (5146,5)
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(6959,5): message : Property 'MSBuildExtensionsPath32' with value 'C:\Program Files\dotnet\sdk\10.0.103' expanded from the environment.
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message : Property reassignment: $(ResolveReferencesDependsOn)="
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ImplicitlyExpandDesignTimeFacades
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     " (previous value: "
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       BeforeResolveReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AssignProjectConfiguration;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveProjectReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       FindInvalidProjectReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveNativeReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveAssemblyReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirects;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       GenerateBindingRedirectsUpdateAppConfig;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       ResolveComReferences;
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :       AfterResolveReferences
+                   C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets(74,5): message :     ") at C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets (74,5)
+                   Assembly loaded during Evaluation: System.Threading.ThreadPool, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Threading.ThreadPool.dll, MVID: 9a930205-386a-43a6-b0b2-26b42bd04d74, AssemblyLoadContext: Default)
+                   Assembly loaded during Evaluation: System.Net.Sockets, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Net.Sockets.dll, MVID: d4dae19c-a532-4ae0-916b-3763913739a0, AssemblyLoadContext: Default)
+                   Assembly loaded during Evaluation: System.Threading.Overlapped, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Threading.Overlapped.dll, MVID: 092ab194-5254-4084-95a8-da161dcea080, AssemblyLoadContext: Default)
+                   Overriding target "GetFrameworkPaths" in project "C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "GetFrameworkPaths" from project "C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets".
+                   The target "ResolveNuGetPackageAssets" listed in an AfterTargets attribute at "C:\Program Files\dotnet\sdk\10.0.103\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets (27,11)" does not exist in the project, and will be ignored.
+07:41:10.058     0>Initial Properties:
+                   _BuildTasksAssemblyName = Microsoft.Build.Tasks.CodeAnalysis
+                   _BuildTasksDirectory = C:\Program Files\dotnet\sdk\10.0.103\Roslyn\
+                   _DebugSymbolsProduced = true
+                   _DeploymentApplicationManifestIdentity = SecurityMonitoringSystem.exe
+                   _DeploymentBuiltUpdateInterval = 0
+                   _DeploymentBuiltUpdateIntervalUnits = Days
+                   _DeploymentDeployManifestIdentity = SecurityMonitoringSystem.application
+                   _DeploymentFileMappingExtension = 
+                   _DeploymentPublishableProjectDefault = true
+                   _DeploymentTargetApplicationManifestFileName = SecurityMonitoringSystem.exe.manifest
+                   _DeploymentUrl = 
+                   _DirectoryBuildPropsBasePath = 
+                   _DirectoryBuildPropsFile = Directory.Build.props
+                   _DirectoryBuildTargetsBasePath = 
+                   _DirectoryBuildTargetsFile = Directory.Build.targets
+                   _DirectoryPackagesPropsBasePath = 
+                   _DirectoryPackagesPropsFile = Directory.Packages.props
+                   _DocumentationFileProduced = false
+                   _GenerateBindingRedirectsIntermediateAppConfig = obj\Debug\SecurityMonitoringSystem.exe.config
+                   _GenerateRestoreGraphProjectEntryInputProperties = ExcludeRestorePackageImports=true
+                   _GetChildProjectCopyToOutputDirectoryItems = true
+                   _HandlePackageFileConflictsAfter = ResolveNuGetPackageAssets
+                   _HandlePackageFileConflictsBefore = ResolveAssemblyReferences
+                   _InitialBaseIntermediateOutputPath = obj\
+                   _InitialMSBuildProjectExtensionsPath = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\obj\
+                   _MaxAvailableLangVersion = 14.0
+                   _MaxSupportedLangVersion = 7.3
+                   _OriginalConfiguration = Debug
+                   _OriginalPlatform = AnyCPU
+                   _ProjectDefaultTargets = Build
+                   _RecursiveTargetForContentCopying = GetCopyToOutputDirectoryItems
+                   _ResolveReferenceDependencies = false
+                   _SGenDllCreated = false
+                   _SGenDllName = SecurityMonitoringSystem.XmlSerializers.dll
+                   _SGenGenerateSerializationAssembliesConfig = Off
+                   _SupportedArchitectures = amd64 arm64
+                   _TargetFrameworkVersionWithoutV = 4.8
+                   _TargetsThatPrepareProjectReferences = 
+                         AssignProjectConfiguration;
+                         _SplitProjectReferencesByFileExistence
+                       
+                   AddAdditionalExplicitAssemblyReferences = true
+                   AddAppConfigToBuildOutputs = true
+                   AdditionalExplicitAssemblyReferences = System.Core;
+                   AllowedReferenceAssemblyFileExtensions = 
+                         .winmd;
+                         .dll;
+                         .exe
+                       
+                   AllowedReferenceRelatedFileExtensions = 
+                         .pdb;
+                         .xml;
+                         .pri;
+                         .dll.config;
+                         .exe.config
+                       
+                   AlwaysUseNumericalSuffixInItemNames = true
+                   AppDesignerFolder = Properties
+                   AssemblyFoldersConfigFile = C:\Program Files\dotnet\sdk\10.0.103\AssemblyFolders.config
+                   AssemblyFoldersSuffix = AssemblyFoldersEx
+                   AssemblyName = SecurityMonitoringSystem
+                   AssemblySearchPaths = {CandidateAssemblyFiles};;{HintPathFromItem};{TargetFrameworkDirectory};;{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};{AssemblyFolders};{GAC};{RawFileName};bin\Debug\
+                   AssignTargetPathsDependsOn = 
+                   AutoGenerateBindingRedirects = true
+                   AutoUnifyAssemblyReferences = true
+                   AvailablePlatforms = Any CPU,x86,x64,ARM64
+                   BaseIntermediateOutputPath = obj\
+                   BaseOutputPath = bin\
+                   BuildCompileAction = Build
+                   BuildDependsOn = 
+                         BeforeBuild;
+                         CoreBuild;
+                         AfterBuild
+                       
+                   BuildGenerateSourcesAction = Build
+                   BuildingProject = false
+                   BuildInParallel = true
+                   BuildLinkAction = Build
+                   BuildProjectReferences = true
+                   BuiltProjectOutputGroupDependenciesDependsOn = 
+                         ;
+                         
+                         ;
+                         BuildOnlySettings;
+                         PrepareForBuild;
+                         AssignTargetPaths;
+                         ResolveReferences
+                       
+                       
+                   BuiltProjectOutputGroupDependsOn = PrepareForBuild
+                   CleanDependsOn = 
+                         BeforeClean;
+                         UnmanagedUnregistration;
+                         CoreClean;
+                         CleanReferencedProjects;
+                         CleanPublishFolder;
+                         AfterClean
+                       
+                   CleanFile = SecurityMonitoringSystem.csproj.FileListAbsolute.txt
+                   ClickOncePublishDir = bin\Debug\app.publish\
+                   CodeAnalysisTargets = C:\Program Files\dotnet\sdk\10.0.103\Microsoft\VisualStudio\v18.0\CodeAnalysis\Microsoft.CodeAnalysis.targets
+                   CommandLineArgsForDesignTimeEvaluation = -langversion:7.3 -define:DEBUG;TRACE
+                   CommonOutputGroupsDependsOn = 
+                         ;
+                         BuildOnlySettings;
+                         PrepareForBuild;
+                         AssignTargetPaths;
+                         ResolveReferences
+                       
+                   CommonTargetsPath = C:\Program Files\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets
+                   CommonXamlResourcesDirectory = C:\Program Files\dotnet\sdk\10.0.103\\
+                   CompileDependsOn = 
+                         ResolveReferences;
+                         ResolveKeySource;
+                         SetWin32ManifestProperties;
+                         _SetPreferNativeArm64Win32ManifestProperties;
+                         FindReferenceAssembliesForReferences;
+                         _GenerateCompileInputs;
+                         BeforeCompile;
+                         _TimeStampBeforeCompile;
+                         _GenerateCompileDependencyCache;
+                         CoreCompile;
+                         _TimeStampAfterCompile;
+                         AfterCompile;
+                       
+                   CompileLicxFilesDependsOn = 
+                   CompilerApiVersion = roslyn5.0
+                   CompilerGeneratedFilesOutputPath = 
+                   ComputeIntermediateSatelliteAssembliesDependsOn = 
+                         CreateManifestResourceNames
+                       
+                   ComReferenceExecuteAsTool = false
+                   ComReferenceNoClassMembers = false
+                   Configuration = Debug
+                   ConfigurationName = Debug
+                   ConsiderPlatformAsProcessorArchitecture = true
+                   ContentFilesProjectOutputGroupDependsOn = PrepareForBuild;AssignTargetPaths
+                   ContinueOnError = false
+                   CoreBuildDependsOn = 
+                         BuildOnlySettings;
+                         PrepareForBuild;
+                         PreBuildEvent;
+                         ResolveReferences;
+                         PrepareResources;
+                         ResolveKeySource;
+                         Compile;
+                         ExportWindowsMDFile;
+                         UnmanagedUnregistration;
+                         GenerateSerializationAssemblies;
+                         CreateSatelliteAssemblies;
+                         GenerateManifests;
+                         GetTargetPath;
+                         PrepareForRun;
+                         UnmanagedRegistration;
+                         IncrementalClean;
+                         PostBuildEvent
+                       
+                   CoreCleanDependsOn = 
+                   CoreCompileDependsOn = ;_ComputeNonExistentFileProperty;ResolveCodeAnalysisRuleSet
+                   CoreResGenDependsOn = FindReferenceAssembliesForReferences
+                   CreateCustomManifestResourceNamesDependsOn = 
+                   CreateHardLinksForCopyAdditionalFilesIfPossible = false
+                   CreateManifestResourceNamesDependsOn = 
+                   CreateSatelliteAssembliesDependsOn = 
+                         ;
+                         _GenerateSatelliteAssemblyInputs;
+                         ComputeIntermediateSatelliteAssemblies;
+                         GenerateSatelliteAssemblies
+                       
+                   CreateSymbolicLinksForCopyAdditionalFilesIfPossible = false
+                   CSharpCoreTargetsPath = C:\Program Files\dotnet\sdk\10.0.103\Roslyn\Microsoft.CSharp.Core.targets
+                   CSharpDesignTimeTargetsPath = C:\Program Files\dotnet\sdk\10.0.103\\Microsoft\VisualStudio\Managed\Microsoft.CSharp.DesignTime.targets
+                   CSharpTargetsPath = C:\Program Files\dotnet\sdk\10.0.103\Microsoft.CSharp.CurrentVersion.targets
+                   CustomAfterMicrosoftCommonProps = C:\Program Files\dotnet\sdk\10.0.103\\vCurrent\Custom.After.Microsoft.Common.props
+                   CustomAfterMicrosoftCommonTargets = C:\Program Files\dotnet\sdk\10.0.103\\vCurrent\Custom.After.Microsoft.Common.targets
+                   CustomAfterMicrosoftCSharpTargets = C:\Program Files\dotnet\sdk\10.0.103\\vCurrent\Custom.After.Microsoft.CSharp.targets
+                   CustomBeforeMicrosoftCommonProps = C:\Program Files\dotnet\sdk\10.0.103\\vCurrent\Custom.Before.Microsoft.Common.props
+                   CustomBeforeMicrosoftCommonTargets = C:\Program Files\dotnet\sdk\10.0.103\\vCurrent\Custom.Before.Microsoft.Common.targets
+                   CustomBeforeMicrosoftCSharpTargets = C:\Program Files\dotnet\sdk\10.0.103\\vCurrent\Custom.Before.Microsoft.CSharp.targets
+                   DebugSymbols = true
+                   DebugSymbolsProjectOutputGroupDependenciesDependsOn = 
+                         ;
+                         
+                         ;
+                         BuildOnlySettings;
+                         PrepareForBuild;
+                         AssignTargetPaths;
+                         ResolveReferences
+                       
+                       
+                   DebugSymbolsProjectOutputGroupDependsOn = 
+                   DebugType = full
+                   DefaultLanguageSourceExtension = .cs
+                   DefaultProjectTypeGuid = {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
+                   DefineCommonCapabilities = true
+                   DefineCommonItemSchemas = true
+                   DefineCommonReferenceSchemas = true
+                   DefineConstants = DEBUG;TRACE
+                   DelaySign = 
+                   DeploymentComputeClickOnceManifestInfoDependsOn = 
+                         CleanPublishFolder;
+                         GetCopyToOutputDirectoryItems;
+                         _DeploymentGenerateTrustInfo;
+                         
+                       
+                   DesignerRuntimeImplementationProjectOutputGroupDependsOn = 
+                         ;
+                         
+                         ;
+                         BuildOnlySettings;
+                         PrepareForBuild;
+                         AssignTargetPaths;
+                         ResolveReferences
+                       
+                       
+                   DesignTimeResolveAssemblyReferencesDependsOn = 
+                         GetFrameworkPaths;
+                         GetReferenceAssemblyPaths;
+                         ResolveReferences
+                       
+                   DevEnvDir = *Undefined*
+                   DisableLogTaskParameter_ConvertToAbsolutePath_Path = true
+                   DisableLogTaskParameter_FindUnderPath_OutOfPath = true
+                   DisableLogTaskParameter_RemoveDuplicates_Inputs = true
+                   DisableLogTaskParameterItemMetadata_ConvertToAbsolutePath_AbsolutePaths = true
+                   DisableLogTaskParameterItemMetadata_Copy_CopiedFiles = true
+                   DisableLogTaskParameterItemMetadata_Copy_DestinationFiles = true
+                   DisableLogTaskParameterItemMetadata_Copy_SourceFiles = true
+                   DisableLogTaskParameterItemMetadata_FindUnderPath_Files = true
+                   DisableLogTaskParameterItemMetadata_FindUnderPath_InPath = true
+                   DisableLogTaskParameterItemMetadata_GenerateResource_FilesWritten = true
+                   DisableLogTaskParameterItemMetadata_Hash_ItemsToHash = true
+                   DisableLogTaskParameterItemMetadata_RemoveDuplicates_Filtered = true
+                   DisableLogTaskParameterItemMetadata_WriteLinesToFile_Lines = true
+                   DocumentationProjectOutputGroupDependenciesDependsOn = 
+                         ;
+                         
+                         ;
+                         BuildOnlySettings;
+                         PrepareForBuild;
+                         AssignTargetPaths;
+                         ResolveReferences
+                       
+                       
+                   DocumentationProjectOutputGroupDependsOn = 
+                   DOTNET_CLI_TELEMETRY_SESSIONID = a39f239b-150a-42fd-97fe-8bbf2e1c45c5
+                   DOTNET_HOST_PATH = C:\Program Files\dotnet\dotnet.exe
+                   EmbeddedWin32Manifest = 
+                   EmitCompilerGeneratedFiles = false
+                   EnableAppxPackageTargetsForUwpClassLibraries = true
+                   ErrorReport = prompt
+                   ExpandSDKAllowedReferenceExtensions = 
+                         .winmd;
+                         .dll
+                       
+                   ExpandSDKReferencesDependsOn = 
+                         ResolveSDKReferences
+                       
+                   FileAlignment = 512
+                   FindInvalidProjectReferencesDependsOn = 
+                         GetReferenceTargetPlatformMonikers
+                       
+                   Framework20Dir = @(_TargetFramework20DirectoryItem)
+                   Framework30Dir = @(_TargetFramework30DirectoryItem)
+                   Framework35Dir = @(_TargetFramework35DirectoryItem)
+                   Framework40Dir = @(_TargetFramework40DirectoryItem)
+                   FrameworkDir = @(_TargetFramework40DirectoryItem)
+                   FrameworkPathOverride = C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8
+                   FrameworkRegistryBase = Software\Microsoft\.NETFramework
+                   FrameworkSDKDir = @(_TargetFrameworkSDKDirectoryItem)
+                   FullReferenceAssemblyNames = Full
+                   GenerateBindingRedirectsOutputType = true
+                   GenerateClickOnceManifests = 
+                   GenerateFullPaths = true
+                   GenerateManifestsDependsOn = 
+                         SetWin32ManifestProperties;
+                         GenerateApplicationManifest;
+                         GenerateDeploymentManifest
+                       
+                   GenerateTargetFrameworkAttribute = true
+                   GetCopyToOutputDirectoryItemsDependsOn = 
+                         AssignTargetPaths;
+                         
+                         AssignProjectConfiguration;
+                         _SplitProjectReferencesByFileExistence
+                       ;
+                         _GetProjectReferenceTargetFrameworkProperties;
+                         _PopulateCommonStateForGetCopyToOutputDirectoryItems
+                       
+                   GetFrameworkPathsDependsOn = 
+                   GetReferenceNearestTargetFrameworkTaskSupportsTargetPlatformParameter = true
+                   GetTargetPathWithTargetPlatformMonikerDependsOn = 
+                   HideWarningsAndErrors = false
+                   HighEntropyVA = true
+                   ImplicitlyExpandDesignTimeFacades = true
+                   ImplicitlyExpandDesignTimeFacadesDependsOn = 
+                         ;
+                         GetReferenceAssemblyPaths
+                       
+                   ImplicitlyExpandNETStandardFacades = true
+                   ImportByWildcardAfterMicrosoftCommonProps = true
+                   ImportByWildcardAfterMicrosoftCommonTargets = true
+                   ImportByWildcardAfterMicrosoftCSharpTargets = true
+                   ImportByWildcardAfterMicrosoftNetFrameworkProps = true
+                   ImportByWildcardAfterMicrosoftNetFrameworkTargets = true
+                   ImportByWildcardBeforeMicrosoftCommonProps = true
+                   ImportByWildcardBeforeMicrosoftCommonTargets = true
+                   ImportByWildcardBeforeMicrosoftCSharpTargets = true
+                   ImportByWildcardBeforeMicrosoftNetFrameworkProps = true
+                   ImportByWildcardBeforeMicrosoftNetFrameworkTargets = true
+                   ImportDirectoryBuildProps = true
+                   ImportDirectoryBuildTargets = true
+                   ImportDirectoryPackagesProps = true
+                   ImportProjectExtensionProps = true
+                   ImportProjectExtensionTargets = true
+                   ImportUserLocationsByWildcardAfterMicrosoftCommonProps = true
+                   ImportUserLocationsByWildcardAfterMicrosoftCommonTargets = true
+                   ImportUserLocationsByWildcardAfterMicrosoftCSharpTargets = true
+                   ImportUserLocationsByWildcardAfterMicrosoftNetFrameworkProps = true
+                   ImportUserLocationsByWildcardAfterMicrosoftNetFrameworkTargets = true
+                   ImportUserLocationsByWildcardBeforeMicrosoftCommonProps = true
+                   ImportUserLocationsByWildcardBeforeMicrosoftCommonTargets = true
+                   ImportUserLocationsByWildcardBeforeMicrosoftCSharpTargets = true
+                   ImportUserLocationsByWildcardBeforeMicrosoftNetFrameworkProps = true
+                   ImportUserLocationsByWildcardBeforeMicrosoftNetFrameworkTargets = true
+                   InnerBuildProperty = TargetFramework
+                   InnerBuildPropertyValues = TargetFrameworks
+                   IntermediateOutputPath = obj\Debug\
+                   IsRestoreTargetsFileLoaded = true
+                   Language = C#
+                   LangVersion = 7.3
+                   MaxSupportedLangVersion = 7.3
+                   MaxTargetPath = 100
+                   MicrosoftCommonPropsHasBeenImported = true
+                   MicrosoftNETBuildExtensionsTargets = C:\Program Files\dotnet\sdk\10.0.103\\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.targets
+                   MicrosoftNETBuildExtensionsTasksAssembly = C:\Program Files\dotnet\sdk\10.0.103\Microsoft\Microsoft.NET.Build.Extensions\\tools\net10.0\Microsoft.NET.Build.Extensions.Tasks.dll
+                   MsAppxPackageTargets = C:\Program Files\dotnet\sdk\10.0.103\Microsoft\VisualStudio\v18.0\AppxPackage\Microsoft.AppXPackage.Targets
+                   MSBuildAllProjects = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj;;C:\Program Files\dotnet\sdk\10.0.103\Current\Microsoft.Common.targets\ImportAfter\Microsoft.TestPlatform.ImportAfter.targets
+                   MSBuildAssemblyVersion = 18.0
+                   MSBuildBinPath = C:\Program Files\dotnet\sdk\10.0.103
+                   MSBuildCopyContentTransitively = true
+                   MSBuildCopyMarkerName = Security.E46223ED.Up2Date
+                   MSBuildDisableFeaturesFromVersion = 999.999
+                   MSBuildExtensionsPath = C:\Program Files\dotnet\sdk\10.0.103\
+                   MSBuildExtensionsPath32 = C:\Program Files\dotnet\sdk\10.0.103
+                   MSBuildExtensionsPath64 = C:\Program Files\dotnet\sdk\10.0.103
+                   MSBUILDFAILONDRIVEENUMERATINGWILDCARD = 1
+                   MSBuildFileVersion = 18.0.11.7603
+                   MSBuildLoadMicrosoftTargetsReadOnly = true
+                   MSBuildNodeCount = 8
+                   MSBuildProgramFiles32 = C:\Program Files (x86)
+                   MSBuildProjectDefaultTargets = Build
+                   MSBuildProjectDirectory = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem
+                   MSBuildProjectDirectoryNoRoot = Users\HF\IAS_Capstone\SecurityMonitoringSystem
+                   MSBuildProjectExtension = .csproj
+                   MSBuildProjectExtensionsPath = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\obj\
+                   MSBuildProjectFile = SecurityMonitoringSystem.csproj
+                   MSBuildProjectFullPath = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj
+                   MSBuildProjectName = SecurityMonitoringSystem
+                   MSBuildRuntimeType = Core
+                   MSBuildSDKsPath = C:\Program Files\dotnet\sdk\10.0.103\Sdks
+                   MSBuildSemanticVersion = 18.0.11+c2435c3e0
+                   MSBuildStartupDirectory = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem
+                   MSBuildToolsPath = C:\Program Files\dotnet\sdk\10.0.103
+                   MSBuildToolsVersion = Current
+                   MSBuildUserExtensionsPath = C:\Users\HF\AppData\Local\Microsoft\MSBuild
+                   MSBUILDUSESERVER = 0
+                   MSBuildUseVisualStudioDirectoryLayout = False
+                   MSBuildVersion = 18.0.11
+                   MSBuildWarningsAsErrors = 
+                   MSBuildWarningsAsMessages = 
+                   MSBuildWarningsNotAsErrors = 
+                   MsTestToolsTargets = C:\Program Files\dotnet\sdk\10.0.103\Microsoft\VisualStudio\v18.0\TeamTest\Microsoft.TeamTest.targets
+                   NetFrameworkPropsPath = C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.props
+                   NetFrameworkTargetsPath = C:\Program Files\dotnet\sdk\10.0.103\Microsoft.NETFramework.CurrentVersion.targets
+                   NoCompilerStandardLib = true
+                   NuGetAudit = true
+                   NuGetAuditLevel = low
+                   NuGetAuditMode = direct
+                   NuGetInteractive = 
+                   NuGetPropsFile = C:\Program Files\dotnet\sdk\10.0.103\NuGet.props
+                   NuGetRestoreTargets = C:\Program Files\dotnet\sdk\10.0.103\NuGet.targets
+                   Optimize = false
+                   OutDir = bin\Debug\
+                   OutputPath = bin\Debug\
+                   OutputType = WinExe
+                   OverwriteReadOnlyFiles = false
+                   PackageDownloadSupported = true
+                   Platform = AnyCPU
+                   PlatformName = AnyCPU
+                   PlatformTarget = AnyCPU
+                   PostBuildEventDependsOn = 
+                   PreBuildEventDependsOn = 
+                   Prefer32Bit = true
+                   PrepareForBuildDependsOn = ;GetFrameworkPaths;GetReferenceAssemblyPaths;AssignLinkMetadata
+                   PrepareForRunDependsOn = 
+                         CopyFilesToOutputDirectory
+                       
+                   PrepareProjectReferencesDependsOn = 
+                         AssignProjectConfiguration;
+                         _SplitProjectReferencesByFileExistence;
+                         _GetProjectReferenceTargetFrameworkProperties;
+                         _GetProjectReferencePlatformProperties
+                       
+                   PrepareResourceNamesDependsOn = 
+                         AssignTargetPaths;
+                         SplitResourcesByCulture;
+                         CreateManifestResourceNames;
+                         CreateCustomManifestResourceNames
+                       
+                   PrepareResourcesDependsOn = 
+                         ;
+                         PrepareResourceNames;
+                         ResGen;
+                         CompileLicxFiles
+                       
+                   ProcessorArchitecture = msil
+                   ProduceReferenceAssembly = false
+                   ProjectDesignTimeAssemblyResolutionSearchPaths = 
+                         {CandidateAssemblyFiles};
+                         ;
+                         {HintPathFromItem};
+                         {TargetFrameworkDirectory};
+                         {Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx};
+                         {RawFileName};
+                         C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\bin\Debug\
+                       
+                   ProjectDir = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\
+                   ProjectExt = .csproj
+                   ProjectFileName = SecurityMonitoringSystem.csproj
+                   ProjectFlavor = Client
+                   ProjectGuid = {1A2B3C4D-5E6F-7A8B-9C0D-1E2F3A4B5C6D}
+                   ProjectName = SecurityMonitoringSystem
+                   ProjectPath = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj
+                   ProjectTypeGuids = {60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
+                   PublishableProject = true
+                   PublishBuildDependsOn = 
+                         BuildOnlySettings;
+                         PrepareForBuild;
+                         ResolveReferences;
+                         PrepareResources;
+                         ResolveKeySource;
+                         GenerateSerializationAssemblies;
+                         CreateSatelliteAssemblies;
+                       
+                   PublishDependsOn = 
+                         SetGenerateManifests;
+                         Build;
+                         PublishOnly
+                       
+                   PublishDir = bin\Debug\app.publish\
+                   PublishOnlyDependsOn = 
+                         SetGenerateManifests;
+                         PublishBuild;
+                         BeforePublish;
+                         GenerateManifests;
+                         CopyFilesToOutputDirectory;
+                         _CopyFilesToPublishFolder;
+                         _DeploymentGenerateBootstrapper;
+                         ResolveKeySource;
+                         _DeploymentSignClickOnceDeployment;
+                         AfterPublish
+                       
+                   RebuildDependsOn = 
+                         BeforeRebuild;
+                         Clean;
+                         Build;
+                         AfterRebuild;
+                       
+                   ReferenceCopyLocalPathsOutputGroupDependsOn = 
+                         ;
+                         
+                         ;
+                         BuildOnlySettings;
+                         PrepareForBuild;
+                         AssignTargetPaths;
+                         ResolveReferences
+                       
+                       
+                   ReportingServicesTargets = C:\Program Files\dotnet\sdk\10.0.103\\Microsoft\VisualStudio\v18.0\ReportingServices\Microsoft.ReportingServices.targets
+                   ResGenDependsOn = ResolveAssemblyReferences;SplitResourcesByCulture;BeforeResGen;CoreResGen;AfterResGen
+                   ResGenExecuteAsTool = false
+                   ResolveAssemblyConflicts = true
+                   ResolveAssemblyReferencesDependsOn = 
+                         ResolveProjectReferences;
+                         FindInvalidProjectReferences;
+                         GetFrameworkPaths;
+                         GetReferenceAssemblyPaths;
+                         PrepareForBuild;
+                         ResolveSDKReferences;
+                         ExpandSDKReferences;
+                       
+                   ResolveReferencesDependsOn = 
+                         
+                         BeforeResolveReferences;
+                         AssignProjectConfiguration;
+                         ResolveProjectReferences;
+                         FindInvalidProjectReferences;
+                         ResolveNativeReferences;
+                         ResolveAssemblyReferences;
+                         GenerateBindingRedirects;
+                         GenerateBindingRedirectsUpdateAppConfig;
+                         ResolveComReferences;
+                         AfterResolveReferences
+                       ;
+                         ImplicitlyExpandDesignTimeFacades
+                       
+                   ResolveSDKReferencesDependsOn = 
+                         GetInstalledSDKLocations
+                       
+                   RestoreBuildInParallel = true
+                   RestoreContinueOnError = WarnAndContinue
+                   RestoreEnablePackagePruning = false
+                   RestorePackagePruningDefault = false
+                   RestoreRecursive = true
+                   RestoreTaskAssemblyFile = NuGet.Build.Tasks.dll
+                   RestoreUseSkipNonexistentTargets = true
+                   RootNamespace = SecurityMonitoringSystem
+                   RoslynTargetsPath = C:\Program Files\dotnet\sdk\10.0.103\Roslyn
+                   RunDependsOn = 
+                   SatelliteDllsProjectOutputGroupDependenciesDependsOn = 
+                         ;
+                         
+                         ;
+                         BuildOnlySettings;
+                         PrepareForBuild;
+                         AssignTargetPaths;
+                         ResolveReferences
+                       
+                       
+                   SatelliteDllsProjectOutputGroupDependsOn = ;PrepareForBuild;PrepareResourceNames
+                   SDKRedistOutputGroupDependsOn = ResolveSDKReferences;ExpandSDKReferences
+                   SDKReferenceDirectoryRoot = C:\Users\HF\AppData\Local\Microsoft SDKs;C:\Program Files (x86)\Microsoft SDKs
+                   SDKReferenceRegistryRoot = Software\Microsoft\Microsoft SDKs
+                   SGenFilesOutputGroupDependenciesDependsOn = 
+                         ;
+                         
+                         ;
+                         BuildOnlySettings;
+                         PrepareForBuild;
+                         AssignTargetPaths;
+                         ResolveReferences
+                       
+                       
+                   SGenFilesOutputGroupDependsOn = 
+                   SGenShouldGenerateSerializer = true
+                   SGenUseKeep = false
+                   SGenUseProxyTypes = true
+                   ShouldMarkCertainSDKReferencesAsRuntimeOnly = true
+                   SkipCopyUnchangedFiles = true
+                   SolutionDir = *Undefined*
+                   SolutionExt = *Undefined*
+                   SolutionFileName = *Undefined*
+                   SolutionName = *Undefined*
+                   SolutionPath = *Undefined*
+                   SourceControlInformationFeatureSupported = true
+                   SourceFilesProjectOutputGroupDependsOn = PrepareForBuild;AssignTargetPaths
+                   SourceRootMappedPathsFeatureSupported = true
+                   SubsystemVersion = 6.00
+                   TargetCulture = *
+                   TargetDeployManifestFileName = SecurityMonitoringSystem.application
+                   TargetDir = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\bin\Debug\
+                   TargetedFrameworkDir = @(_TargetedFrameworkDirectoryItem)
+                   TargetedRuntimeVersion = v
+                   TargetedSDKArchitecture = msil
+                   TargetedSDKConfiguration = Debug
+                   TargetExt = .exe
+                   TargetFileName = SecurityMonitoringSystem.exe
+                   TargetFrameworkIdentifier = .NETFramework
+                   TargetFrameworkMoniker = .NETFramework,Version=v4.8
+                   TargetFrameworkMonikerAssemblyAttributesPath = obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs
+                   TargetFrameworkSDKToolsDirectory = 
+                   TargetFrameworkVersion = v4.8
+                   TargetName = SecurityMonitoringSystem
+                   TargetPath = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\bin\Debug\SecurityMonitoringSystem.exe
+                   TargetPlatformDisplayName = Windows 7.0
+                   TargetPlatformIdentifier = Windows
+                   TargetPlatformMoniker = Windows,Version=7.0
+                   TargetPlatformRegistryBase = Software\Microsoft\Microsoft SDKs\Windows
+                   TargetPlatformSdkPath = 
+                   TargetPlatformVersion = 7.0
+                   TargetRuntime = Managed
+                   UnmanagedRegistrationDependsOn = 
+                   UnmanagedUnregistrationDependsOn = 
+                   UpgradeSubsetToProfile = true
+                   UseCommonOutputDirectory = false
+                   UseDefaultPlatformLookupTables = true
+                   UseHostCompilerIfAvailable = true
+                   UseMSBuildTestInfrastructure = false
+                   UseSourcePath = true
+                   Utf8Output = true
+                   ValidateRuntimeIdentifierCompatibility = false
+                   VisualStudioVersion = 18.0
+                   VSTestConsolePath = C:\Program Files\dotnet\sdk\10.0.103\vstest.console.dll
+                   VSTestNoBuild = False
+                   VSTestTargets = C:\Program Files\dotnet\sdk\10.0.103\\Microsoft.TestPlatform.targets
+                   VSTestTaskAssemblyFile = Microsoft.TestPlatform.Build.dll
+                   VsTestUseMSBuildOutput = False
+                   WarningLevel = 4
+                   WebReference_EnableLegacyEventingModel = false
+                   WebReference_EnableProperties = true
+                   WebReference_EnableSQLTypes = true
+                   WMSJSProject = WJProject
+                   WMSJSProjectDirectory = JavaScript
+                   YieldDuringToolExecution = true
+
+07:41:10.058     0>Initial Items:
+                   _AllDirectoriesAbove
+                       C:\
+                       C:\Users
+                       C:\Users\HF
+                       C:\Users\HF\IAS_Capstone
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\Models
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\Services
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\ViewModels
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\Views
+                   _ApplicationManifestFinal
+                       bin\Debug\SecurityMonitoringSystem.exe.manifest
+                           TargetPath = SecurityMonitoringSystem.exe.manifest
+                   _DebugSymbolsIntermediatePath
+                       obj\Debug\SecurityMonitoringSystem.pdb
+                   _DebugSymbolsOutputPath
+                       bin\Debug\SecurityMonitoringSystem.pdb
+                   _DeploymentManifestEntryPoint
+                       obj\Debug\SecurityMonitoringSystem.exe
+                           TargetPath = SecurityMonitoringSystem.exe
+                   _ExplicitReference
+                       C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\mscorlib.dll
+                   _OutputPathItem
+                       bin\Debug\
+                   _ResolveComReferenceCache
+                       obj\Debug\SecurityMonitoringSystem.csproj.ResolveComReference.cache
+                   _UnmanagedRegistrationCache
+                       obj\SecurityMonitoringSystem.csproj.UnmanagedRegistration.cache
+                   AppConfigFileDestination
+                       bin\Debug\SecurityMonitoringSystem.exe.config
+                   ApplicationDefinition
+                       App.xaml
+                           Generator = MSBuild:Compile
+                           SubType = Designer
+                   ApplicationManifest
+                       obj\Debug\SecurityMonitoringSystem.exe.manifest
+                           TargetPath = SecurityMonitoringSystem.exe.manifest
+                   BuiltProjectOutputGroupKeyOutput
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\obj\Debug\SecurityMonitoringSystem.exe
+                           IsKeyOutput = true
+                           FinalOutputPath = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\bin\Debug\SecurityMonitoringSystem.exe
+                           TargetPath = SecurityMonitoringSystem.exe
+                   Compile
+                       App.xaml.cs
+                           DependentUpon = App.xaml
+                       LoginWindow.xaml.cs
+                           DependentUpon = LoginWindow.xaml
+                       MainWindow.xaml.cs
+                           DependentUpon = MainWindow.xaml
+                       Models\SampleData.cs
+                       Services\AccessControlService.cs
+                       Services\ActivityLogService.cs
+                       Services\DatabaseInitializer.cs
+                       Services\EncryptionService.cs
+                       Services\NetworkSimulationService.cs
+                       Services\SessionProvider.cs
+                       Services\ThreatDetectionService.cs
+                       ViewModels\MainViewModel.cs
+                       ViewModels\ObservableObject.cs
+                       ViewModels\RelayCommand.cs
+                       Views\AccessControlView.xaml.cs
+                           DependentUpon = AccessControlView.xaml
+                       Views\ActivityLogView.xaml.cs
+                           DependentUpon = ActivityLogView.xaml
+                       Views\DashboardView.xaml.cs
+                           DependentUpon = DashboardView.xaml
+                       Views\EncryptionView.xaml.cs
+                           DependentUpon = EncryptionView.xaml
+                       Views\NetworkMonitoringView.xaml.cs
+                           DependentUpon = NetworkMonitoringView.xaml
+                       Views\ThreatDetectionView.xaml.cs
+                           DependentUpon = ThreatDetectionView.xaml
+                   CopyUpToDateMarker
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\obj\Debug\Security.E46223ED.Up2Date
+                   DebugSymbolsProjectOutputGroupOutput
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\obj\Debug\SecurityMonitoringSystem.pdb
+                           FinalOutputPath = C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\bin\Debug\SecurityMonitoringSystem.pdb
+                           TargetPath = SecurityMonitoringSystem.pdb
+                   DeployManifest
+                       obj\Debug\SecurityMonitoringSystem.application
+                           TargetPath = SecurityMonitoringSystem.application
+                   GlobalAnalyzerConfigFiles
+                       C:\.globalconfig
+                       C:\Users\.globalconfig
+                       C:\Users\HF\.globalconfig
+                       C:\Users\HF\IAS_Capstone\.globalconfig
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\.globalconfig
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\Models\.globalconfig
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\Services\.globalconfig
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\ViewModels\.globalconfig
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\Views\.globalconfig
+                   IntermediateAssembly
+                       obj\Debug\SecurityMonitoringSystem.exe
+                   PackageConflictOverrides
+                       NETStandard.Library
+                           OverriddenPackages = 
+                           Microsoft.Win32.Primitives|4.3.0;
+                           System.AppContext|4.3.0;
+                           System.Collections|4.3.0;
+                           System.Collections.Concurrent|4.3.0;
+                           System.Collections.Immutable|1.4.0;
+                           System.Collections.NonGeneric|4.3.0;
+                           System.Collections.Specialized|4.3.0;
+                           System.ComponentModel|4.3.0;
+                           System.ComponentModel.EventBasedAsync|4.3.0;
+                           System.ComponentModel.Primitives|4.3.0;
+                           System.ComponentModel.TypeConverter|4.3.0;
+                           System.Console|4.3.0;
+                           System.Data.Common|4.3.0;
+                           System.Diagnostics.Contracts|4.3.0;
+                           System.Diagnostics.Debug|4.3.0;
+                           System.Diagnostics.FileVersionInfo|4.3.0;
+                           System.Diagnostics.Process|4.3.0;
+                           System.Diagnostics.StackTrace|4.3.0;
+                           System.Diagnostics.TextWriterTraceListener|4.3.0;
+                           System.Diagnostics.Tools|4.3.0;
+                           System.Diagnostics.TraceSource|4.3.0;
+                           System.Diagnostics.Tracing|4.3.0;
+                           System.Dynamic.Runtime|4.3.0;
+                           System.Globalization|4.3.0;
+                           System.Globalization.Calendars|4.3.0;
+                           System.Globalization.Extensions|4.3.0;
+                           System.IO|4.3.0;
+                           System.IO.Compression|4.3.0;
+                           System.IO.Compression.ZipFile|4.3.0;
+                           System.IO.FileSystem|4.3.0;
+                           System.IO.FileSystem.DriveInfo|4.3.0;
+                           System.IO.FileSystem.Primitives|4.3.0;
+                           System.IO.FileSystem.Watcher|4.3.0;
+                           System.IO.IsolatedStorage|4.3.0;
+                           System.IO.MemoryMappedFiles|4.3.0;
+                           System.IO.Pipes|4.3.0;
+                           System.IO.UnmanagedMemoryStream|4.3.0;
+                           System.Linq|4.3.0;
+                           System.Linq.Expressions|4.3.0;
+                           System.Linq.Queryable|4.3.0;
+                           System.Net.Http|4.3.0;
+                           System.Net.NameResolution|4.3.0;
+                           System.Net.Primitives|4.3.0;
+                           System.Net.Requests|4.3.0;
+                           System.Net.Security|4.3.0;
+                           System.Net.Sockets|4.3.0;
+                           System.Net.WebHeaderCollection|4.3.0;
+                           System.ObjectModel|4.3.0;
+                           System.Private.DataContractSerialization|4.3.0;
+                           System.Reflection|4.3.0;
+                           System.Reflection.Emit|4.3.0;
+                           System.Reflection.Emit.ILGeneration|4.3.0;
+                           System.Reflection.Emit.Lightweight|4.3.0;
+                           System.Reflection.Extensions|4.3.0;
+                           System.Reflection.Primitives|4.3.0;
+                           System.Reflection.TypeExtensions|4.3.0;
+                           System.Resources.ResourceManager|4.3.0;
+                           System.Runtime|4.3.0;
+                           System.Runtime.Extensions|4.3.0;
+                           System.Runtime.Handles|4.3.0;
+                           System.Runtime.InteropServices|4.3.0;
+                           System.Runtime.InteropServices.RuntimeInformation|4.3.0;
+                           System.Runtime.Loader|4.3.0;
+                           System.Runtime.Numerics|4.3.0;
+                           System.Runtime.Serialization.Formatters|4.3.0;
+                           System.Runtime.Serialization.Json|4.3.0;
+                           System.Runtime.Serialization.Primitives|4.3.0;
+                           System.Security.AccessControl|4.4.0;
+                           System.Security.Claims|4.3.0;
+                           System.Security.Cryptography.Algorithms|4.3.0;
+                           System.Security.Cryptography.Csp|4.3.0;
+                           System.Security.Cryptography.Encoding|4.3.0;
+                           System.Security.Cryptography.Primitives|4.3.0;
+                           System.Security.Cryptography.X509Certificates|4.3.0;
+                           System.Security.Cryptography.Xml|4.4.0;
+                           System.Security.Principal|4.3.0;
+                           System.Security.Principal.Windows|4.4.0;
+                           System.Text.Encoding|4.3.0;
+                           System.Text.Encoding.Extensions|4.3.0;
+                           System.Text.RegularExpressions|4.3.0;
+                           System.Threading|4.3.0;
+                           System.Threading.Overlapped|4.3.0;
+                           System.Threading.Tasks|4.3.0;
+                           System.Threading.Tasks.Extensions|4.3.0;
+                           System.Threading.Tasks.Parallel|4.3.0;
+                           System.Threading.Thread|4.3.0;
+                           System.Threading.ThreadPool|4.3.0;
+                           System.Threading.Timer|4.3.0;
+                           System.ValueTuple|4.3.0;
+                           System.Xml.ReaderWriter|4.3.0;
+                           System.Xml.XDocument|4.3.0;
+                           System.Xml.XmlDocument|4.3.0;
+                           System.Xml.XmlSerializer|4.3.0;
+                           System.Xml.XPath|4.3.0;
+                           System.Xml.XPath.XDocument|4.3.0;
+                         
+                   Page
+                       LoginWindow.xaml
+                           Generator = MSBuild:Compile
+                           SubType = Designer
+                       MainWindow.xaml
+                           Generator = MSBuild:Compile
+                           SubType = Designer
+                       Views\AccessControlView.xaml
+                           Generator = MSBuild:Compile
+                           SubType = Designer
+                       Views\ActivityLogView.xaml
+                           Generator = MSBuild:Compile
+                           SubType = Designer
+                       Views\DashboardView.xaml
+                           Generator = MSBuild:Compile
+                           SubType = Designer
+                       Views\EncryptionView.xaml
+                           Generator = MSBuild:Compile
+                           SubType = Designer
+                       Views\NetworkMonitoringView.xaml
+                           Generator = MSBuild:Compile
+                           SubType = Designer
+                       Views\ThreatDetectionView.xaml
+                           Generator = MSBuild:Compile
+                           SubType = Designer
+                   PotentialEditorConfigFiles
+                       C:\.editorconfig
+                       C:\Users\.editorconfig
+                       C:\Users\HF\.editorconfig
+                       C:\Users\HF\IAS_Capstone\.editorconfig
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\.editorconfig
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\Models\.editorconfig
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\Services\.editorconfig
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\ViewModels\.editorconfig
+                       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\Views\.editorconfig
+                   ProjectCapability
+                       AllTargetOutputGroups
+                       AssemblyReferences
+                       BuildWindowsDesktopTarget
+                       COMReferences
+                       CSharp
+                       DeclaredSourceItems
+                       LanguageService
+                       Managed
+                       OutputGroups
+                       ProjectReferences
+                       ReferencesFolder
+                       RelativePathDerivedDefaultNamespace
+                       SharedProjectReferences
+                       SingleFileGenerators
+                       UserSourceItems
+                       VisualStudioWellKnownOutputGroups
+                   PropertyPageSchema
+                       C:\Program Files\dotnet\sdk\10.0.103\\assemblyreference.xaml
+                           Context = ;BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\COMReference.xaml
+                           Context = ;BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\Content.xaml
+                           Context = File;BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\CSharp.BrowseObject.xaml
+                           Context = BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\CSharp.ProjectItemsSchema.xaml
+                       C:\Program Files\dotnet\sdk\10.0.103\\CSharp.xaml
+                           Context = File
+                       C:\Program Files\dotnet\sdk\10.0.103\\Debugger_General.xaml
+                           Context = Project
+                       C:\Program Files\dotnet\sdk\10.0.103\\EmbeddedResource.xaml
+                           Context = File;BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\Folder.xaml
+                           Context = File;BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\General_File.xaml
+                           Context = File
+                       C:\Program Files\dotnet\sdk\10.0.103\\General.BrowseObject.xaml
+                           Context = BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\General.xaml
+                           Context = Project
+                       C:\Program Files\dotnet\sdk\10.0.103\\None.xaml
+                           Context = File;BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\ProjectItemsSchema.xaml
+                       C:\Program Files\dotnet\sdk\10.0.103\\ProjectReference.xaml
+                           Context = ;BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\ResolvedAssemblyReference.xaml
+                           Context = ProjectSubscriptionService;BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\ResolvedCOMReference.xaml
+                           Context = ProjectSubscriptionService;BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\ResolvedProjectReference.xaml
+                           Context = ProjectSubscriptionService;BrowseObject
+                       C:\Program Files\dotnet\sdk\10.0.103\\SCC.xaml
+                           Context = Invisible
+                       C:\Program Files\dotnet\sdk\10.0.103\\SpecialFolder.xaml
+                           Context = File;ProjectSubscriptionService
+                   Reference
+                       Microsoft.CSharp
+                       PresentationCore
+                       PresentationFramework
+                       System
+                       System.Core
+                       System.Data
+                       System.Data.DataSetExtensions
+                       System.Xaml
+                           RequiredTargetFramework = 4.0
+                       System.Xml
+                       System.Xml.Linq
+                       WindowsBase
+
+07:41:10.059     1>Project "C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj" on node 1 (MarkupCompilePass1 target(s)).
+07:41:10.059     1>Project file contains ToolsVersion="15.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="Current". For more information, please see http://go.microsoft.com/fwlink/?LinkId=293424.
+07:41:10.061     1>C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj : error MSB4057: The target "MarkupCompilePass1" does not exist in the project.
+07:41:10.061     1>Done Building Project "C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj" (MarkupCompilePass1 target(s)) -- FAILED.
+Deferred Messages
+07:41:10.064     0>
+Detailed Build Summary
+======================
+     (TaskId:0)
+                     
+                     ============================== Build Hierarchy (IDs represent configurations) =====================================================
+                     Id                  : Exclusive Time   Total Time   Path (Targets)
+                     ----------------------------------------------------------------------------------------------------------------------------------- (TaskId:0)
+                     0                   : 0.225s           0.225s       C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj (MarkupCompilePass1)  (TaskId:0)
+                     
+                     ============================== Node Utilization (IDs represent configurations) ====================================================
+                     Timestamp:            1        Duration   Cumulative
+                     ----------------------------------------------------------------------------------------------------------------------------------- (TaskId:0)
+                     639119796698356556:   0        0.228s     0.228s .... (TaskId:0)
+                     -----------------------------------------------------------------------------------------------------------------------------------
+                     Utilization:          100.0    Average Utilization: 100.0 (TaskId:0)
+
+Project Evaluation Performance Summary:
+      197 ms  C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj   1 calls
+
+Project Performance Summary:
+        3 ms  C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj   1 calls
+                  3 ms  MarkupCompilePass1                         1 calls
+
+Build FAILED.
+
+                   "C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj" (MarkupCompilePass1 target) (1) ->
+                     C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\SecurityMonitoringSystem.csproj : error MSB4057: The target "MarkupCompilePass1" does not exist in the project.
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.26
