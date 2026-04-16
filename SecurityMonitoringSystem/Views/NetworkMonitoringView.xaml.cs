@@ -6,15 +6,18 @@ namespace SecurityMonitoringSystem.Views
 {
     public partial class NetworkMonitoringView : UserControl
     {
+        private Services.NetworkSimulationService _service;
+
         public NetworkMonitoringView()
         {
             InitializeComponent();
+            _service = new Services.NetworkSimulationService();
             LoadData();
         }
 
-        private void LoadData()
+        private async void LoadData()
         {
-            var devices = SampleData.GetDevices();
+            var devices = await _service.GetAllDevicesAsync();
             DevicesDataGrid.ItemsSource = null;
             DevicesDataGrid.ItemsSource = devices;
         }

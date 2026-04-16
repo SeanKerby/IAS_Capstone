@@ -70,8 +70,8 @@
                         </StackPanel>
                     </Border>
 
-                    <Button Content="Isolate Affected Nodes" Background="#3F3F46" Height="40" Margin="0,5" Click="Action_Click"/>
-                    <Button Content="Initialize Countermeasures" Background="#3F3F46" Height="40" Margin="0,5" Click="Action_Click"/>
+                    <Button Content="Isolate Affected Nodes" Background="#3F3F46" Height="40" Margin="0,5" Click="Isolate_Click"/>
+                    <Button Content="Initialize Countermeasures" Background="#3F3F46" Height="40" Margin="0,5" Click="Counter_Click"/>
                 </StackPanel>
             </Border>
         </Grid>

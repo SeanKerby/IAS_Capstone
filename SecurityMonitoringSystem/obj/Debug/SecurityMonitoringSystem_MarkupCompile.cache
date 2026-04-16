@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Administrator\Documents\IAS_Finals\SecurityMonitoringSystem\obj\Debug\
+C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\obj\Debug\
 SecurityMonitoringSystem
 none
 false
 DEBUG;TRACE
-C:\Users\Administrator\Documents\IAS_Finals\SecurityMonitoringSystem\App.xaml
+C:\Users\HF\IAS_Capstone\SecurityMonitoringSystem\App.xaml
 7476750477
 
-121462845472
-12-1089664636
+18-1382625651
+121182277259
 MainWindow.xaml;Views\DashboardView.xaml;Views\NetworkMonitoringView.xaml;Views\AccessControlView.xaml;Views\EncryptionView.xaml;Views\ActivityLogView.xaml;Views\ThreatDetectionView.xaml;
 
 False

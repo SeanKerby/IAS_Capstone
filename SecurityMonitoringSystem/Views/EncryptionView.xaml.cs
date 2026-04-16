@@ -7,18 +7,21 @@ namespace SecurityMonitoringSystem.Views
 {
     public partial class EncryptionView : UserControl
     {
+        private Services.EncryptionService _service;
+
         public EncryptionView()
         {
             InitializeComponent();
+            _service = new Services.EncryptionService();
         }
 
-        private void Encrypt_Click(object sender, RoutedEventArgs e)
+        private async void Encrypt_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtInput.Text)) return;
             try
             {
-                var bytes = Encoding.UTF8.GetBytes(txtInput.Text);
-                txtOutput.Text = Convert.ToBase64String(bytes);
+                txtOutput.Text = _service.Encrypt(txtInput.Text);
+                await Services.ActivityLogService.LogActionAsync("User", "Encryption", "Data natively encrypted via AES-256.");
                 txtInput.Clear();
             }
             catch (Exception ex)
@@ -27,13 +30,13 @@ namespace SecurityMonitoringSystem.Views
             }
         }
 
-        private void Decrypt_Click(object sender, RoutedEventArgs e)
+        private async void Decrypt_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtOutput.Text)) return;
             try
             {
-                var bytes = Convert.FromBase64String(txtOutput.Text);
-                txtInput.Text = Encoding.UTF8.GetString(bytes);
+                txtInput.Text = _service.Decrypt(txtOutput.Text);
+                await Services.ActivityLogService.LogActionAsync("User", "Encryption", "Data properly decrypted returning to plaintext.");
                 txtOutput.Clear();
             }
             catch (Exception)

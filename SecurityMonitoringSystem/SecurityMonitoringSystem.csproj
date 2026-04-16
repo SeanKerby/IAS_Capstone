@@ -102,6 +102,12 @@
       <DependentUpon>ThreatDetectionView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\SampleData.cs" />
+    <Compile Include="Services\DatabaseInitializer.cs" />
+    <Compile Include="Services\ActivityLogService.cs" />
+    <Compile Include="Services\AccessControlService.cs" />
+    <Compile Include="Services\EncryptionService.cs" />
+    <Compile Include="Services\NetworkSimulationService.cs" />
+    <Compile Include="Services\ThreatDetectionService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

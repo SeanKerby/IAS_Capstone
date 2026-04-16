@@ -18,15 +18,15 @@
         <Border Grid.Row="1" Background="{StaticResource PanelBrush}" Margin="0,0,0,20" CornerRadius="8" Padding="15">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Search Logs:" VerticalAlignment="Center" Margin="0,0,10,0"/>
-                <TextBox Width="250" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtSearch" Width="250" VerticalAlignment="Center"/>
                 <TextBlock Text="Filter by Module:" VerticalAlignment="Center" Margin="20,0,10,0"/>
-                <ComboBox Width="150" SelectedIndex="0" VerticalAlignment="Center">
+                <ComboBox x:Name="cmbModule" Width="150" SelectedIndex="0" VerticalAlignment="Center">
                     <ComboBoxItem Content="All Modules"/>
                     <ComboBoxItem Content="Access Control"/>
                     <ComboBoxItem Content="Threat Detection"/>
                     <ComboBoxItem Content="Encryption"/>
                 </ComboBox>
-                <Button Content="Search" Width="80" Margin="20,0,0,0"/>
+                <Button Content="Search" Width="80" Margin="20,0,0,0" Click="Search_Click"/>
             </StackPanel>
         </Border>
 
